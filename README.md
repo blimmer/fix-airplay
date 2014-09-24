@@ -5,3 +5,9 @@ A simple script that kills the coreaudio daemon to fix common AirPlay problems. 
 
 # Download
 Get the application [here](https://github.com/l1m5/fix-airplay/raw/master/FixAirplay.app.zip).
+
+# Script
+You can also just run this from the terminal:
+```bash
+sudo kill `ps -ax | grep 'coreaudiod' | grep 'sbin' |awk '{print $1}'`
+```
